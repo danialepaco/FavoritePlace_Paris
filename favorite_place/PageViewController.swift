@@ -18,10 +18,9 @@ class PageViewController: UIPageViewController
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // this class is the page view controller's data source itself
         self.dataSource = self
         
-        // create the first walkthrough vc
+        // create the first imgGalleryVC
         if let startImgGalleryVC = self.viewControllerAtIndex(0) {
             setViewControllers([startImgGalleryVC], direction: .Forward, animated: true, completion: nil)
         }
